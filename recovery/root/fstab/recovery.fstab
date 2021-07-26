@@ -1,0 +1,21 @@
+# mount point       fstype    device                                                                flags
+/system             ext4      /dev/block/bootdevice/by-name/system                                  flags=display="System";backup=1;
+/system_image       emmc      /dev/block/bootdevice/by-name/system                                  flags=display="System image";backup=1;flashimg=1;
+/system_image       emmc      /dev/block/bootdevice/by-name/system                                  flags=display="System image";backup=1;flashimg=1;
+/data               f2fs      /dev/block/bootdevice/by-name/userdata                                flags=display="Data";
+/keymaster          emmc      /dev/block/bootdevice/by-name/keymaster                               flags=display="Keymaster";
+/cache              auto      /dev/block/bootdevice/by-name/cache                                   flags=display="Cache";
+/boot               emmc      /dev/block/bootdevice/by-name/boot                                    flags=display="Boot";backup=1;flashimg=1;
+/recovery           emmc      /dev/block/bootdevice/by-name/recovery                                flags=display="Recovery";backup=1;flashimg=1;
+/vendor             ext4      /dev/block/bootdevice/by-name/oem                                     flags=display="Vendor";backup=1;
+/vendor_image       emmc      /dev/block/bootdevice/by-name/oem                                     flags=display="Vendor image";backup=1;flashimg=1;
+/vendor_image       emmc      /dev/block/bootdevice/by-name/oem                                     flags=display="Vendor image";backup=1;flashimg=1;
+/persist            ext4      /dev/block/bootdevice/by-name/persist                                 flags=display="Persist";
+/persist_image      emmc      /dev/block/bootdevice/by-name/persist                                 flags=display="Persist image";backup=1;flashimg=1;
+/firmware           ext4      /dev/block/bootdevice/by-name/modem                                   flags=display="Firmware";
+/misc               emmc      /dev/block/bootdevice/by-name/misc                                    flags=display="Misc";backup=1;flashimg=1;
+/efs1               emmc      /dev/block/bootdevice/by-name/modemst1                                flags=display="Efs1";
+/efs2               emmc      /dev/block/bootdevice/by-name/modemst2                                flags=display="Efs2";
+/logo               emmc      /dev/block/bootdevice/by-name/logo                                    flags=display="Logo";
+/external_sd        auto      /dev/block/mmcblk1p1                                                  flags=display="External_sd";
+/usb-otg            auto      /dev/block/sda1                                                       flags=display="Usb-otg";
